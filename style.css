@@ -1,7 +1,10 @@
 *{
-    box-sizing: border-box;
+    
+    
 }
-
+body{
+    align-items: center;
+}
 #img1{
     float: inline-start;
     padding-right: 40px;   
@@ -10,9 +13,9 @@
 #img2{
     animation: img-fade ease-in forwards;
     animation-timeline: view();
-    animation-range: entry 200px;
+    animation-range: entry 10rem;
     opacity: 0;
-    height: 60vh;
+    height: 25rem;
     
 }
 
@@ -32,7 +35,7 @@
     text-decoration-line: none;
     padding: 10px;
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jost', sans-serif;;
     letter-spacing: 1px;
     cursor: pointer;
     font-size: 1rem;
@@ -53,7 +56,7 @@
 
 @media screen and (max-width:1000px){
     aside, section, article{
-        width: 100%;
+        width: 200%;
     } 
 }
 
@@ -89,22 +92,20 @@ p{
     --scroll: 0;
 }
 
-.scroll-watcher{
- 
-}
   
 .top{
     text-align: start;
     align-items: center;
     justify-content: space-around;
-    height: 75vh;
+    height: 75svh;
+    width: 100vh;
 }
 
 .top{
     background-color: rgb(35, 108, 202);
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 0.9rem;
+    border-bottom-left-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
     overflow: hidden;
     transform-style: preserve-3d;
     animation: back-trans .8s ease-in forwards;
@@ -114,7 +115,7 @@ p{
     display: flex;
     justify-content: space-evenly;
     background-color: black;
-    height: 80vh;
+    height: 80svh;
     align-content: center;
     animation: img-fade ease-in forwards;
     animation-timeline: view();
@@ -136,31 +137,61 @@ p{
 
 }
 
+.share-holder1{
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+
 .share-holder2{
     display: grid;
-    grid-template-rows: 450px 450px;
-    grid-template-columns: 450px 450px;
+    grid-template-columns:
+     repeat(auto-fit, minmax(250px,1fr));
     justify-content : space-evenly;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    gap: 20px;
+    font-family: 'Oswald', sans-serif; 
     flex-wrap: wrap;
+    padding: 5%;
+    gap: 2%;
+}
+.share-holder2 .p2{
+   
+}
+.share-holder2 .p3{
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
 }
 
 .mid1{
-    margin-bottom: 8%;
+    position: relative;
+    padding-top: 2.5%;
+    padding-bottom: 8%;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: space-evenly;
     background-color: rgb(248, 248, 248);
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    
 }
 .mid1 p1{
-        
+    position: relative;    
     float: left;
-    margin-top: 5%;
-    font-size: 20px;
+    margin-top: 4%;
+    font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5%;
+    width: 100%;
+
+} 
+
+@media (max-width: 62.5rem){
+
+    .mid1{
+        flex-direction: column-reverse 
+        
+    }
+    .mid1 p{
+        text-align: right;
+    }
 
 }
 
@@ -175,7 +206,7 @@ p{
 }
 
 .mission .back{
-    top: 50%;
+    top: 30%;
     margin: 20%;
     color: #fff;
     position: relative;
@@ -187,17 +218,18 @@ p{
     position: relative;
 
 }
-.mission h2{
-    font-size: 12px;
-    
+.mission h3{
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    padding: 1rem;
     color: #fff;
-    right: 15px;
+    right: 20px;
 }
 
 .guid{
     display: flex;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     justify-content: space-evenly;
 }
 .guid h1{
@@ -208,8 +240,8 @@ p{
 }
 .guid h3{
     padding-top: 10%;
-    font-size: 28px;
-    font-family: 'Roboto',sans-serif;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
     text-align: start;
 }
 .mid2{
@@ -225,7 +257,7 @@ p{
 }
 
 .bottom-footer{
-    height: 50vh;
+    height: 50svh;
     background-color: rgb(13, 12, 20);
 }
 
@@ -234,7 +266,7 @@ p{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 31.25rem;
     width: auto;
 }
 
@@ -244,7 +276,7 @@ p{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 31.25rem;
     width: auto;
 }
 
@@ -255,7 +287,7 @@ p{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 31.25rem;
     width: auto;
 }
 
@@ -296,6 +328,10 @@ p{
     text-align: center;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
+}
+
+.lists{
+    padding-top: 5%;
 }
 
 .fade {
